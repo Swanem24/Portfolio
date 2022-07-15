@@ -1,5 +1,9 @@
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
 /* Decoratiing website */
 body {
+    font-family: 'Edu NSW ACT Foundation', cursive;
     display: flex;
     align-content: center;
     align-items: center;
@@ -22,18 +26,63 @@ body {
 .profile-picture {
     margin: 20px 0px;
     border: 1px solid black;
+    padding: 10px;
+    background-color: black;
 }
 
 .about-me {
     padding: 5px 20px;
     margin: 20px 0px;
-    background-color: white;
+    background-color: #ffe5e5;
 }
 
-.about-me h2 {
+.about-me h2, .project-section h2{
     font-size: 32px;
 }
 
-.about-me p {
+.about-me ul, .project-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.about-me p , .about-me li{
+    font-size: 24px;
+}
+
+.icon-panel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0px;
+    background-color: #ffe5e5;
+    height: 500px;
+    width: 1760px;
+}
+
+.project-section li {
+    margin: 20px 0px;
+}
+
+.project-section a {
+    font-style: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel {
+    margin: 20px 40px;
     font-size: 24px;
 }
