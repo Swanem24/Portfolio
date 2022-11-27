@@ -10,11 +10,19 @@ body {
     justify-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #00C8FF;
+    background-color: #0faeda;
 }
 
 #title {
     font-size: 62px;
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+
+#title:hover {
+    font-size: 82px;
+    cursor: pointer;
+    
 }
 
 .first-section {
@@ -23,11 +31,19 @@ body {
     margin: 20px 60px;
 }
 
+@media screen and (max-width: 1200px) {
+    .first-section {
+      flex-direction: column;
+    }
+}
+  
+
 .profile-picture {
     margin: 20px 0px;
     border: 1px solid black;
     padding: 10px;
     background-color: black;
+    object-fit: cover;
 }
 
 .about-me {
