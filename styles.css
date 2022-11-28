@@ -15,14 +15,14 @@ body {
 
 #title {
     font-size: 62px;
-    transition: 2s;
+    transition: 1s;
     transition-timing-function: ease-out;
 }
 
 #title:hover {
     font-size: 82px;
     cursor: pointer;
-    
+    text-shadow: 5px 5px #6b6969;
 }
 
 .first-section {
@@ -51,6 +51,12 @@ body {
     margin: 20px 0px;
     background-color: #ffe5e5;
     border: 4px dashed black;
+}
+
+.about-me:hover {
+    border: 4px solid black;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .about-me h2, .project-section h2{
@@ -82,8 +88,14 @@ body {
     margin: 20px 0px;
     background-color: #ffe5e5;
     height: 500px;
-    width: 1760px;
+    width: 1720px;
     border: 4px dashed black;
+}
+
+.project-section:hover {
+    border: 4px solid black;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .project-section li {
@@ -98,9 +110,11 @@ body {
 .container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+
 }
 
 .panel {
-    margin: 20px 40px;
-    font-size: 24px;
+    border: 1px solid black;
+
 }
