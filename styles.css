@@ -63,7 +63,7 @@ p {
     font-size: 1em;
 }
 
-#profile, #education, #skills{
+#profile, #education, #skills, #Work{
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
