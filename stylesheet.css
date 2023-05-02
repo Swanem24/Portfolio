@@ -1,0 +1,105 @@
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+body {
+    background-color: rgb(1, 1, 92);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 24px;
+    color:  rgb(158, 157, 157);
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: block;
+    float: right;
+    padding: 0px 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(158, 157, 157);
+}
+
+a:hover {
+    color: rgb(216, 214, 214);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin: 100px 200px;
+    row-gap: 100px;
+}
+
+.banner {
+    background-color: rgb(3, 3, 121);
+    position: relative;
+    height: 500px;
+    width: auto;
+    text-align: center;
+    font-style: italic;
+    overflow: hidden;
+    box-shadow: 40px 40px rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+    border: 15px ridge rgba(31, 182, 44, 0.6);
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fly-in 2s forwards;
+}
+
+.banner h1, .banner h2, .banner img{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fly-in 2s forwards;
+}
+
+@keyframes fly-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.banner img {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.banner img:hover {
+    opacity: 80%;
+}
+
+.work {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.work-item img {
+    width: 600px;
+    height: 100%;
+    object-fit:cover;
+    border: 1px black solid;
+}
+
+.work-item p {
+    padding: 0px 10px;
+}
+
+.work-item {
+    background-color: rgb(3, 3, 121);
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.lab {
+    display: inline;
+}
