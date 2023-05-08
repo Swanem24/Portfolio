@@ -16,6 +16,9 @@
   z-index: 1;
   top: -5px;
   left: 120%;
+  
+   opacity: 0;
+  transition: opacity 1s;
 }
 
 .tooltip .tooltiptext::after {
@@ -30,4 +33,5 @@
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  opacity: 1;
 }
