@@ -1,3 +1,5 @@
+//  TOOL TIP for showing image previews
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -34,4 +36,19 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-About-
+I should use list and change the background color when you hover it
+
+-Thumbnail Image-
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
