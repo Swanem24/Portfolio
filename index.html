@@ -3,33 +3,135 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./stylesheet.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/60d469fa1b.js" crossorigin="anonymous"></script>
-        <script src="myscripts.js"></script>
-        <title>Sanjog Wanem</title>
+        <script>
+            window.onload = function() {
+                window.scrollTo(0,0);
+            }
+        </script>
+        <title>Sanjog Wanem | Home</title>
     </head>
 
     <body>
-        <div id="title">
-            <h1>Sanjog Wanem</h1>
-            <p>Junior Software Developer</p>
-        </div>
+        <nav>
+            <ul>
+                <li style="float:left"><a href="#start">Sanjog Wanem</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#lab">Lab</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#start">Start</a></li>
+            </ul>
+        </nav>
 
-        <div id="details">
-            <img src="IMG_20220610_201532.jpg">
-            <div id="mini-details">
+        <div class="grid-container" id="#start">
+            <section class="banner">
+                <h1>Hello, my name is <span style="color: white;">Sanjog Wanem</span></h1>
+                <h2>I design and develope Websites, Games and Programs</h2>
+                <img src="Pictures/s-wanem24logo.png">
+            </section>
+
+            <section class="work">
+                <h3 id="work">-Work-</h3>
+                <div class="work-item">
+                    <img src="Pictures/ashford fight club.JPG">
+                    <p>
+                        #HTML #CSS<br>
+                        <br>
+                        Ashford Fight Club
+                        <br>
+                        This is a website for martial art clubs. In this website it will display information about events and gathering for people who are interested in learning martial arts.
+                        <br>
+                        <br>
+                        <a href="https://swanem24.github.io/Ashford-fight-club/">
+                            <button type="button">
+                                Ashford Fight Club
+                            </button>
+                        </a>
+                    </p>
+                </div>
+                <div class="work-item" style="background-color: inherit;">
+                    <p>
+                        #Unity C#<br>
+                        <br>
+                        Zombie Shooter
+                        <br>
+                        A 2D top-down shooting game. Created using Unity, artwork and sound from various artists. The goal of the game is to survive as many waves of zombies you can before your health runs out.
+                        Collect coins to buy weapon upgrades in the shop.
+                        <br>
+                        <br>
+                        <a href="https://swanem24.itch.io/zombie-shooter">
+                            <button type="button">
+                                Zombie Shooter
+                            </button>
+                        </a>
+                    </p>
+                    <img src="Pictures/Zombie.JPG">
+                </div>
+                <div class="work-item">
+                    <img src="Pictures/Wayne-enterprises.jpg">
+                    <p>
+                        #HTML #CSS<br>
+                        <br>
+                        Wayne Enterprise
+                        <br>
+                        A Business website about a fictional company from Batman.
+                        <br>
+                        <br>
+                        <a href="https://swanem24.github.io/Wayne-Enterprise/">
+                            <button type="button">
+                                Wayne Enterprise
+                            </button>
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="lab">
+                <h3 id="lab">-Lab-</h3>
+                <p>Here are some of my mini experiments, games, open source projects, animation, archived stuff and more..</p>
+                
                 <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot" style="font-size:36px;"></i> 
-                        <p>Ashford, Kent</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone" style="font-size:36px;"></i>
-                        <p>07452841316</p>
-                    </li>
+                    Codings
+                    <li><a href="#">Portfolio V1</a></li>
+                    <li><a href="#">Countdown</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Pizza Ordering system</a></li>
+                    <li><a href="#">Interface</a></li>
+                </ul>
+
+                <ul>
+                    Games
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Countdown</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Pizza Ordering system</a></li>
+                    <li><a href="#">Interface</a></li>
+                </ul>
+
+                <ul>
+                    Randoms
+                    <li><a href="#">Pixel Art</a></li>
+                    <li><a href="#">Countdown</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Pizza Ordering system</a></li>
+                    <li><a href="#">Interface</a></li>
+                </ul>
+            </section>
+
+            <section class="about" id="about">
+                <ul class="about-me">
+                    <li><span>Name:</span> Sanjog Wanem</li>
+                    <li><span>Location:</span> Ashford, Kent (United Kingdom)</li>
+                    <li><span>Skills:</span> HTML, CSS, React, Node.js, Git, Java, Javascript, C#</li>
+                    <li><span>Education:</span> Studied Computer Science at University of Portsmouth. Graduated with 2.2 GPA</li>
+                    <li><span>Hobbies:</span> Programming, playing video games and going to the gym</li>
+                </ul>
+                <ul style="text-align: center; list-style: none;">
                     <li>
                         <i class="fa-solid fa-envelope" style="font-size:36px;"></i>
                         <p>sjwanem@gmail.com</p>
@@ -43,71 +145,8 @@
                         <p><a href="https://github.com/Swanem24">Github</a></p>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-        <div id="profile">
-            <h3>Profile</h3>
-            <p>
-                Motivated student seeking career in web development. Hardworking and friendly person with strong organisation and time management skills. Eager to support and learn from development teams to deliver well-designed mobile and web applications.
-            </p>
-        </div>
-
-        <div id="education">
-            <h3>Education</h3>
-            <p>
-                <b>University of Portsmouth (2016 - 2020)</b><br>
-                <b>Bachelor of Science, Computer Science</b>
-            </p>
-            <ul>
-                <li>
-                    2.2
-                </li>
-                <li>
-                    Advanced programming concepts
-                    - Learning the concepts and logics of codes
-                </li>
-                <li>
-                    Introduction to software engineering - 
-                    Learning different types of methods for developing an application, 
-                    Identifying risks and benefits of each methods,
-                    Working on a project in a group
-                </li>
-                <li>
-                    Introduction to database design and development - Basic command methods of SQL, Accessing and reading tables
-                </li>
-                <li>
-                    Web Foundation - Learning the very basic of HTML, CSS and Javascript, 
-                    Creating a reactive website
-                </li>
-            </ul>
-        </div>
-
-        <div id="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>Javascript</li>
-                <li>Git</li>
-                <li>C# in Unity</li>
-                <li>React</li>
-            </ul>
-        </div>
-
-        <div id="Work">
-            <h3>Work</h3>
-            <ul>
-                <li><a href="https://swanem24.github.io/Wayne-Enterprise/">Company Website</a></li>
-                <li><a href="https://swanem24.github.io/Ashford-fight-club/">Activity Club</a></li>
-                <li><a href="https://swanem24.github.io/Quiz-app/">Quiz Website</a></li>
-            </ul>
+            </section>
         </div>
     </body>
-
-    <footer>
-
-    </footer>
 
 </html>
