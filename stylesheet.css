@@ -18,6 +18,11 @@ nav li {
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
 }
 
+#start, #work, #lab {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+
 a {
     text-decoration: none;
     color: rgb(158, 157, 157);
@@ -55,6 +60,24 @@ a:hover {
     transform: translateX(-100%);
     animation: fly-in 2s forwards;
 }
+
+button {
+    border: none;
+    background-color: rgba(31, 182, 44, 0.6);
+    color: rgb(158, 157, 157);
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+button:hover {
+    opacity: 70%;
+    border-radius: 15%;
+  }
 
 @keyframes fly-in {
     from {
@@ -102,4 +125,54 @@ a:hover {
 
 .lab {
     display: inline;
+}
+
+.about {
+    background-color: rgb(13, 13, 14);
+}
+
+.about span {
+    font-weight: bold;
+    color: rgba(31, 182, 44, 0.6);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+
+.tooltiptext img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
