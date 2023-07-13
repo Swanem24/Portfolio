@@ -1,15 +1,13 @@
 /* Font Style */
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
-
 body {
-    background-color: rgb(1, 1, 92);
+    background-color: rgb(10, 77, 104);
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 24px;
-    color:  rgb(158, 157, 157);
+    color:  rgb(0, 255, 202);
     display: flex;
     flex-direction: column;
-    border-left: 6px dashed rgba(31, 182, 44, 0.6);
-    height: 100%;
+    border-left: 6px dashed rgb(0, 255, 202);
 }
 
 nav li {
@@ -17,7 +15,6 @@ nav li {
     float: right;
     padding: 0px 10px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
 }
 
 #start, #work, #lab {
@@ -27,22 +24,22 @@ nav li {
 
 a {
     text-decoration: none;
-    color: rgb(158, 157, 157);
+    color: rgb(5, 191, 219);
 }
 
 a:hover {
-    color: rgb(216, 214, 214);
+    color: rgba(5, 191, 219, 0.445);
 }
 
 .grid-container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     margin: 100px 200px;
     row-gap: 100px;
 }
 
 .banner {
-    background-color: rgb(3, 3, 121);
+    background-color: rgb(8, 131, 149);
     position: relative;
     height: 500px;
     width: auto;
@@ -51,7 +48,7 @@ a:hover {
     overflow: hidden;
     box-shadow: 40px 40px rgba(0, 0, 0, 0.37);
     border-radius: 25px;
-    border: 15px ridge rgba(31, 182, 44, 0.6);
+    border: 15px ridge rgb(5, 191, 219);
     opacity: 0;
     transform: translateX(-100%);
     animation: fly-in 2s forwards;
@@ -65,8 +62,8 @@ a:hover {
 
 button {
     border: none;
-    background-color: rgba(31, 182, 44, 0.6);
-    color: rgb(158, 157, 157);
+    background-color: rgb(5, 191, 219);
+    color: white;
     padding: 16px 32px;
     text-align: center;
     display: inline-block;
@@ -75,10 +72,11 @@ button {
     transition-duration: 0.4s;
     cursor: pointer;
     transition: transform .2s;
+    border-radius: 5%;
   }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
 @keyframes fly-in {
@@ -107,12 +105,11 @@ button:hover {
 }
 
 .work-item img {
-    width: 600px;
+    max-width: 600px;
     height: 100%;
     object-fit:cover;
-    border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    border: 2px solid rgb(5, 191, 219);
     z-index: 1;
 }
 
@@ -121,7 +118,7 @@ button:hover {
 }
 
 .work-item {
-    background-color: rgb(3, 3, 121);
+    background-color: rgb(8, 131, 149);
     color: inherit;
     display: flex;
     flex-direction: row;
@@ -145,7 +142,7 @@ button:hover {
 }
 
 .about-me li:hover {
-    background-color: rgb(3, 3, 121);
+    background-color: rgb(8, 131, 149);
 }
 
 .about li {
@@ -154,7 +151,7 @@ button:hover {
 
 .about span {
     font-weight: bold;
-    color: rgba(31, 182, 44, 0.6);
+    color: rgb(5, 191, 219);
 }
 
 .tooltip {
@@ -194,3 +191,32 @@ button:hover {
     visibility: visible;
     opacity: 1;
   }
+
+
+@media all and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        margin: 100px 0px;
+        row-gap: 100px;
+    }
+
+    .work-item {
+        background-color: rgb(8, 131, 149);
+        color: inherit;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .work-item img {
+        max-width: 50%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 4px;
+        border: 2px solid rgb(5, 191, 219);
+        z-index: 1;
+    }
+}
